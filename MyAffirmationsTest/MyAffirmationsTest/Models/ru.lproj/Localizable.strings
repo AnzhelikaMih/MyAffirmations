@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  AffirmationsSpark
+
+  Created by Савелий Коцур on 01.08.2024.
+  
+*/
+
+"choose_category" = "Выберите категорию";
+"category" = "Категория";
+"choose_color" = "Выберите цвет фона";
+"color" = "Цвет";
+"choose_gender" = "Выберите пол";
+"gender" = "Пол";
+"next_button" = "Далее";
+"start_button" = "Начать";
+"love" = "Любовь";
+"friendship" = "Дружба";
+"blue" = "Синий";
+"red" = "Красный";
+"male" = "Мужской";
+"female" = "Женский";
