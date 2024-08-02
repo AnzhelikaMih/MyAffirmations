@@ -15,19 +15,18 @@ struct AffirmationsView: View {
             TabView {
                 ForEach(affirmations, id: \.self) { phrase in
                     Text(phrase)
-                        .padding()
-                        .font(.title)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.center)
-                        .lineLimit(nil)
-                        .frame(maxWidth: 350, maxHeight: .infinity)
-                        .padding()
-                        .rotationEffect(.degrees(-90))
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .edgesIgnoringSafeArea(.all)
+                        .rotationEffect(.degrees(270))
+                        .padding(.horizontal)
                 }
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            .frame(minWidth: UIScreen.main.bounds.height - 200, minHeight: UIScreen.main.bounds.width)
             .rotationEffect(.degrees(90))
+            .tabViewStyle(PageTabViewStyle())
         }
     }
 }
