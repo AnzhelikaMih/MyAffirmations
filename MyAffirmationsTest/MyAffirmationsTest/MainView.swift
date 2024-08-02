@@ -53,12 +53,11 @@ struct MainView: View {
                         Button(action: {
                             print("1")
                         }, label: {
-                            Image(systemName: "distribute.vertical")
+                            Image(systemName: "text.justify")
                                 .foregroundColor(.black)
+                                .font(.title)
                                 .frame(maxWidth: 40, maxHeight: 40)
-                                .background(.white)
-                                .cornerRadius(5)
-                                .padding(.trailing)
+                                .padding()
                         })
                     }
                     .frame(maxWidth: UIScreen.main.bounds.width)
