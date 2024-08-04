@@ -49,5 +49,3 @@ enum Gender: String, CaseIterable, Identifiable {
         }
     }
 }
-    
-    
