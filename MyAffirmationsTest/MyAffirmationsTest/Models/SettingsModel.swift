@@ -5,7 +5,6 @@
 //  Created by Анжелика on 2.08.24.
 //
 
-//import Foundation
 import SwiftUI
 
 enum Category: String, CaseIterable, Identifiable {
@@ -26,8 +25,8 @@ enum BGColor: String, CaseIterable, Identifiable {
     var id: String { self.rawValue }
     var color: Color {
         switch self {
-        case .blue: return Color.blue
-        case .red: return Color.red
+        case .blue: return Color.blue.opacity(0.5)
+        case .red: return Color.red.opacity(0.5)
         }
     }
     
@@ -35,13 +34,6 @@ enum BGColor: String, CaseIterable, Identifiable {
         switch self {
         case .blue: return "blue".localized
         case .red: return "red".localized
-        }
-    }
-    
-    var backgroundImage: String {
-        switch self {
-        case .blue: return "bg_blue"
-        case .red: return "bg_red"
         }
     }
 }
@@ -56,11 +48,6 @@ enum Gender: String, CaseIterable, Identifiable {
         case .female: return "female".localized
         }
     }
-}
-
-struct Affirmations {
-    var love: [String]
-    var friendship: [String]
 }
     
     
