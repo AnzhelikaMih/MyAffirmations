@@ -18,10 +18,13 @@
 		42CD8B642C5CB4050031846D /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B632C5CB4050031846D /* GenderView.swift */; };
 		42CD8B662C5CB4590031846D /* AffirmationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B652C5CB4590031846D /* AffirmationsView.swift */; };
 		42CD8B702C5CB47A0031846D /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B6B2C5CB47A0031846D /* SettingsModel.swift */; };
-		42CD8B712C5CB47A0031846D /* StringsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B6C2C5CB47A0031846D /* StringsExtension.swift */; };
+		42CD8B712C5CB47A0031846D /* Strings+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B6C2C5CB47A0031846D /* Strings+Extension.swift */; };
 		42CD8B7C2C5CD7540031846D /* SegmentPicker.Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B792C5CD7540031846D /* SegmentPicker.Attribute.swift */; };
 		42CD8B7D2C5CD7540031846D /* SegmentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B7A2C5CD7540031846D /* SegmentPicker.swift */; };
 		42CD8B7F2C5CD9610031846D /* SegmentPickerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B7E2C5CD9610031846D /* SegmentPickerRepresentable.swift */; };
+		42ECC9732C5E66DC00D30F1D /* AffirmationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ECC9722C5E66DC00D30F1D /* AffirmationModel.swift */; };
+		42ECC9782C5E67F000D30F1D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ECC9772C5E67F000D30F1D /* NetworkService.swift */; };
+		42ECC9802C5FB2BE00D30F1D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42ECC97E2C5FB2BE00D30F1D /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +40,14 @@
 		42CD8B632C5CB4050031846D /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
 		42CD8B652C5CB4590031846D /* AffirmationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsView.swift; sourceTree = "<group>"; };
 		42CD8B6B2C5CB47A0031846D /* SettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
-		42CD8B6C2C5CB47A0031846D /* StringsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringsExtension.swift; sourceTree = "<group>"; };
+		42CD8B6C2C5CB47A0031846D /* Strings+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Extension.swift"; sourceTree = "<group>"; };
 		42CD8B792C5CD7540031846D /* SegmentPicker.Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentPicker.Attribute.swift; sourceTree = "<group>"; };
 		42CD8B7A2C5CD7540031846D /* SegmentPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentPicker.swift; sourceTree = "<group>"; };
 		42CD8B7E2C5CD9610031846D /* SegmentPickerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentPickerRepresentable.swift; sourceTree = "<group>"; };
+		42ECC9722C5E66DC00D30F1D /* AffirmationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationModel.swift; sourceTree = "<group>"; };
+		42ECC9772C5E67F000D30F1D /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		42ECC97F2C5FB2BE00D30F1D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = MyAffirmationsTest/Localization/ru.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		42F23E332C5FB2E300F4FBE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = MyAffirmationsTest/Localization/en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,16 +81,15 @@
 			isa = PBXGroup;
 			children = (
 				42CD8B4D2C5CB30B0031846D /* MyAffirmationsTestApp.swift */,
-				42CD8B5B2C5CB3480031846D /* MainView.swift */,
-				42CD8B5D2C5CB3720031846D /* OnboardingStage.swift */,
-				42CD8B5F2C5CB3CF0031846D /* CategoryView.swift */,
-				42CD8B612C5CB3E90031846D /* ColorView.swift */,
-				42CD8B632C5CB4050031846D /* GenderView.swift */,
-				42CD8B652C5CB4590031846D /* AffirmationsView.swift */,
-				42CD8B4F2C5CB30B0031846D /* ContentView.swift */,
-				42CD8B7B2C5CD7540031846D /* SegmentPicker */,
+				42ECC96A2C5E628D00D30F1D /* MainScreen */,
+				42ECC9692C5E5F0100D30F1D /* OnboardingScreen */,
+				42ECC97D2C5FB13100D30F1D /* CustomComponents */,
+				42ECC9712C5E662E00D30F1D /* Services */,
+				42ECC95B2C5E4E0700D30F1D /* Localization */,
+				42ECC97B2C5FB09800D30F1D /* Supplements */,
 				42CD8B6D2C5CB47A0031846D /* Models */,
 				42CD8B512C5CB30D0031846D /* Assets.xcassets */,
+				42CD8B4F2C5CB30B0031846D /* ContentView.swift */,
 				42CD8B532C5CB30D0031846D /* Preview Content */,
 			);
 			path = MyAffirmationsTest;
@@ -101,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				42CD8B6B2C5CB47A0031846D /* SettingsModel.swift */,
-				42CD8B6C2C5CB47A0031846D /* StringsExtension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -114,6 +119,76 @@
 				42CD8B7E2C5CD9610031846D /* SegmentPickerRepresentable.swift */,
 			);
 			path = SegmentPicker;
+			sourceTree = "<group>";
+		};
+		42ECC95B2C5E4E0700D30F1D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				42ECC97E2C5FB2BE00D30F1D /* Localizable.strings */,
+			);
+			name = Localization;
+			path = SegmentPicker/Localization;
+			sourceTree = "<group>";
+		};
+		42ECC95F2C5E4F3500D30F1D /* OnboardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				42CD8B5F2C5CB3CF0031846D /* CategoryView.swift */,
+				42CD8B612C5CB3E90031846D /* ColorView.swift */,
+				42CD8B632C5CB4050031846D /* GenderView.swift */,
+			);
+			path = OnboardingViews;
+			sourceTree = "<group>";
+		};
+		42ECC9692C5E5F0100D30F1D /* OnboardingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				42CD8B5D2C5CB3720031846D /* OnboardingStage.swift */,
+				42ECC95F2C5E4F3500D30F1D /* OnboardingViews */,
+			);
+			path = OnboardingScreen;
+			sourceTree = "<group>";
+		};
+		42ECC96A2C5E628D00D30F1D /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				42ECC97C2C5FB0E100D30F1D /* Views */,
+				42ECC9722C5E66DC00D30F1D /* AffirmationModel.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		42ECC9712C5E662E00D30F1D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				42ECC9772C5E67F000D30F1D /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		42ECC97B2C5FB09800D30F1D /* Supplements */ = {
+			isa = PBXGroup;
+			children = (
+				42CD8B6C2C5CB47A0031846D /* Strings+Extension.swift */,
+			);
+			path = Supplements;
+			sourceTree = "<group>";
+		};
+		42ECC97C2C5FB0E100D30F1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42CD8B5B2C5CB3480031846D /* MainView.swift */,
+				42CD8B652C5CB4590031846D /* AffirmationsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42ECC97D2C5FB13100D30F1D /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				42CD8B7B2C5CD7540031846D /* SegmentPicker */,
+			);
+			path = CustomComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +234,7 @@
 				en,
 				Base,
 				ru,
+				be,
 			);
 			mainGroup = 42CD8B412C5CB30B0031846D;
 			productRefGroup = 42CD8B4B2C5CB30B0031846D /* Products */;
@@ -175,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42ECC9802C5FB2BE00D30F1D /* Localizable.strings in Resources */,
 				42CD8B552C5CB30D0031846D /* Preview Assets.xcassets in Resources */,
 				42CD8B522C5CB30D0031846D /* Assets.xcassets in Resources */,
 			);
@@ -190,7 +267,8 @@
 				42CD8B7F2C5CD9610031846D /* SegmentPickerRepresentable.swift in Sources */,
 				42CD8B702C5CB47A0031846D /* SettingsModel.swift in Sources */,
 				42CD8B622C5CB3E90031846D /* ColorView.swift in Sources */,
-				42CD8B712C5CB47A0031846D /* StringsExtension.swift in Sources */,
+				42CD8B712C5CB47A0031846D /* Strings+Extension.swift in Sources */,
+				42ECC9782C5E67F000D30F1D /* NetworkService.swift in Sources */,
 				42CD8B502C5CB30B0031846D /* ContentView.swift in Sources */,
 				42CD8B5C2C5CB3480031846D /* MainView.swift in Sources */,
 				42CD8B4E2C5CB30B0031846D /* MyAffirmationsTestApp.swift in Sources */,
@@ -198,12 +276,25 @@
 				42CD8B642C5CB4050031846D /* GenderView.swift in Sources */,
 				42CD8B7C2C5CD7540031846D /* SegmentPicker.Attribute.swift in Sources */,
 				42CD8B662C5CB4590031846D /* AffirmationsView.swift in Sources */,
+				42ECC9732C5E66DC00D30F1D /* AffirmationModel.swift in Sources */,
 				42CD8B602C5CB3CF0031846D /* CategoryView.swift in Sources */,
 				42CD8B7D2C5CD7540031846D /* SegmentPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42ECC97E2C5FB2BE00D30F1D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42ECC97F2C5FB2BE00D30F1D /* ru */,
+				42F23E332C5FB2E300F4FBE4 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		42CD8B562C5CB30D0031846D /* Debug */ = {
@@ -340,7 +431,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,7 +464,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

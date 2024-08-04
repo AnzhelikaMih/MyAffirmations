@@ -12,7 +12,7 @@ struct OnboardingStage: View {
     
     @AppStorage("onboardingChecked") private var onboardingChecked: Bool = false
     @AppStorage("category") private var selectedCategory: Category = .love
-    @AppStorage("color") private var selectedBackgroundColor: BGColor = .blue
+    @AppStorage("color") private var selectedBGColor: BGColor = .blue
     @AppStorage("gender") private var selectedGender: Gender = .male
     
     var body: some View {
@@ -26,13 +26,13 @@ struct OnboardingStage: View {
                 switch currentStep {
                 case 0:
                     CategoryView(selectedCategory: $selectedCategory)
-                        .transition(.move(edge: .leading))
+                        .transition(.move(edge: .top))
                 case 1:
-                    ColorView(selectedBGColor: $selectedBackgroundColor)
-                        .transition(.move(edge: .leading))
+                    ColorView(selectedBGColor: $selectedBGColor)
+                        .transition(.move(edge: .top))
                 case 2:
                     GenderView(selectedGender: $selectedGender)
-                        .transition(.move(edge: .leading))
+                        .transition(.move(edge: .top))
                 default:
                     EmptyView()
                 }
@@ -41,11 +41,7 @@ struct OnboardingStage: View {
                 
                 Button(action: {
                     withAnimation {
-                        if currentStep < 2 {
-                            currentStep += 1
-                        } else {
-                            onboardingChecked = true
-                        }
+                        currentStep < 2 ? (currentStep += 1) : (onboardingChecked = true)
                     }
                     
                 }) {

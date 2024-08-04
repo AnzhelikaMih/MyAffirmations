@@ -1,5 +1,5 @@
 //
-//  CategoryView.swift
+//  ColorView.swift
 //  MyAffirmationsTest
 //
 //  Created by Анжелика on 2.08.24.
@@ -7,25 +7,25 @@
 
 import SwiftUI
 
-struct CategoryView: View {
-    @Binding var selectedCategory: Category
-
+struct ColorView: View {
+    @Binding var selectedBGColor: BGColor
+    
     var body: some View {
         VStack {
             Spacer()
-            Text("choose_category".localized.uppercased())
-                .font(.largeTitle)
+            Text("select_color".localized.uppercased())
+                .font(.title)
                 .foregroundColor(.secondary)
                 .padding()
                 .multilineTextAlignment(.center)
-            Spacer()
             SegmentPickerRepresentable(
                 selectedSegmentIndex: Binding(
-                    get: { Category.allCases.firstIndex(of: selectedCategory) ?? 0 },
-                    set: { selectedCategory = Category.allCases[$0] }
+                    get: { BGColor.allCases.firstIndex(of: selectedBGColor) ?? 0 },
+                    set: { selectedBGColor = BGColor.allCases[$0] }
                 ),
                 attribute: .init(
-                    items: Category.allCases.map { $0.displayName.uppercased() }
+                    items: BGColor.allCases.map {
+                        $0.displayName.uppercased() }
                 )
             )
             .padding()
@@ -33,4 +33,3 @@ struct CategoryView: View {
         }
     }
 }
-
