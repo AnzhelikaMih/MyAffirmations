@@ -25,6 +25,8 @@
 		42ECC9732C5E66DC00D30F1D /* AffirmationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ECC9722C5E66DC00D30F1D /* AffirmationModel.swift */; };
 		42ECC9782C5E67F000D30F1D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ECC9772C5E67F000D30F1D /* NetworkService.swift */; };
 		42ECC9802C5FB2BE00D30F1D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42ECC97E2C5FB2BE00D30F1D /* Localizable.strings */; };
+		42F23E362C5FF1B600F4FBE4 /* AffirmationsAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 42F23E352C5FF1B600F4FBE4 /* AffirmationsAPI.json */; };
+		42F23E382C5FF58200F4FBE4 /* AffirmationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23E372C5FF58200F4FBE4 /* AffirmationsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		42ECC9772C5E67F000D30F1D /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		42ECC97F2C5FB2BE00D30F1D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = MyAffirmationsTest/Localization/ru.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		42F23E332C5FB2E300F4FBE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = MyAffirmationsTest/Localization/en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		42F23E352C5FF1B600F4FBE4 /* AffirmationsAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AffirmationsAPI.json; sourceTree = "<group>"; };
+		42F23E372C5FF58200F4FBE4 /* AffirmationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				42CD8B6B2C5CB47A0031846D /* SettingsModel.swift */,
+				42F23E352C5FF1B600F4FBE4 /* AffirmationsAPI.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			children = (
 				42ECC97C2C5FB0E100D30F1D /* Views */,
 				42F23E342C5FB43F00F4FBE4 /* Model */,
+				42F23E392C5FF87A00F4FBE4 /* ViewModel */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -197,6 +203,14 @@
 				42ECC9722C5E66DC00D30F1D /* AffirmationModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		42F23E392C5FF87A00F4FBE4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				42F23E372C5FF58200F4FBE4 /* AffirmationsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +276,7 @@
 				42ECC9802C5FB2BE00D30F1D /* Localizable.strings in Resources */,
 				42CD8B552C5CB30D0031846D /* Preview Assets.xcassets in Resources */,
 				42CD8B522C5CB30D0031846D /* Assets.xcassets in Resources */,
+				42F23E362C5FF1B600F4FBE4 /* AffirmationsAPI.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +302,7 @@
 				42ECC9732C5E66DC00D30F1D /* AffirmationModel.swift in Sources */,
 				42CD8B602C5CB3CF0031846D /* CategoryView.swift in Sources */,
 				42CD8B7D2C5CD7540031846D /* SegmentPicker.swift in Sources */,
+				42F23E382C5FF58200F4FBE4 /* AffirmationsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

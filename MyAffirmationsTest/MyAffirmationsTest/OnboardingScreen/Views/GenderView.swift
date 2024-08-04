@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct GenderView: View {
+    
+    // MARK: - Properties
     @Binding var selectedGender: Gender
     
+    // MARK: - Components
     var body: some View {
         VStack {
             Spacer()

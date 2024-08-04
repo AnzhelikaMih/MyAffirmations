@@ -9,9 +9,12 @@ import SwiftUI
 import UIKit
 
 struct SegmentPickerRepresentable: UIViewRepresentable {
+    
+    // MARK: - Properties
     @Binding var selectedSegmentIndex: Int
     var attribute: SegmentPicker.Attribute
 
+    // MARK: - Methods
     func makeUIView(context: Context) -> UISegmentedControl {
         let segmentPicker = SegmentPicker(attribute: attribute)
         segmentPicker.addTarget(context.coordinator, action: #selector(Coordinator.valueChanged(_:)), for: .valueChanged)
@@ -26,6 +29,7 @@ struct SegmentPickerRepresentable: UIViewRepresentable {
         Coordinator(self)
     }
 
+    // MARK: - Coordinator
     class Coordinator: NSObject {
         var parent: SegmentPickerRepresentable
 

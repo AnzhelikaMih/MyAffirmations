@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct AffirmationsView: View {
+    
+    // MARK: - Properties
     let affirmations: [String]
     
+    // MARK: - Components
     var body: some View {
         VStack {
             TabView {

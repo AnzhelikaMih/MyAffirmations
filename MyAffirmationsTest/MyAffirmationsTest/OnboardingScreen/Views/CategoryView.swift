@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct CategoryView: View {
+    
+    // MARK: - Properties
     @Binding var selectedCategory: Category
 
+    // MARK: - Components
     var body: some View {
         VStack {
             Spacer()
@@ -32,4 +35,3 @@ struct CategoryView: View {
         }
     }
 }
-

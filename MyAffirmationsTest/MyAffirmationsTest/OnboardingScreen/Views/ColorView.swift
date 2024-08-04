@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ColorView: View {
+    
+    // MARK: - Properties
     @Binding var selectedBGColor: BGColor
     
+    // MARK: - Components
     var body: some View {
         VStack {
             Spacer()

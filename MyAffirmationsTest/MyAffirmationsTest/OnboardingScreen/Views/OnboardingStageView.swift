@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct OnboardingStageView: View {
+    
+    // MARK: - Properties
     @State private var currentStep: Int = 0
     
     @AppStorage("onboardingChecked") private var onboardingChecked: Bool = false
@@ -15,6 +17,7 @@ struct OnboardingStageView: View {
     @AppStorage("color") private var selectedBGColor: BGColor = .blue
     @AppStorage("gender") private var selectedGender: Gender = .male
     
+    // MARK: - Components
     var body: some View {
         ZStack {
             Image("bg_onboarding")
@@ -60,4 +63,3 @@ struct OnboardingStageView: View {
         }
     }
 }
-
