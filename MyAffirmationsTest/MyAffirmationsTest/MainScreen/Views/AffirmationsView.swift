@@ -1,5 +1,5 @@
 //
-//  CarouselView.swift
+//  AffirmationsView.swift
 //  MyAffirmationsTest
 //
 //  Created by Анжелика on 2.08.24.

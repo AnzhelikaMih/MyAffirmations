@@ -1,5 +1,5 @@
 //
-//  OnboardingStage.swift
+//  OnboardingStageView.swift
 //  MyAffirmationsTest
 //
 //  Created by Анжелика on 2.08.24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OnboardingStage: View {
+struct OnboardingStageView: View {
     @State private var currentStep: Int = 0
     
     @AppStorage("onboardingChecked") private var onboardingChecked: Bool = false

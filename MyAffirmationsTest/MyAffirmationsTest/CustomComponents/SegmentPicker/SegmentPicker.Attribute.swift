@@ -1,6 +1,6 @@
 //
 //  SegmentPicker.Attribute.swift
-//  Main
+//  MyAffirmationsTest
 //
 //  Created by Анжелика on 2.08.24.
 //

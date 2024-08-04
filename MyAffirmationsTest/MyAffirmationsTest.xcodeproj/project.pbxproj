@@ -12,7 +12,7 @@
 		42CD8B522C5CB30D0031846D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42CD8B512C5CB30D0031846D /* Assets.xcassets */; };
 		42CD8B552C5CB30D0031846D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42CD8B542C5CB30D0031846D /* Preview Assets.xcassets */; };
 		42CD8B5C2C5CB3480031846D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B5B2C5CB3480031846D /* MainView.swift */; };
-		42CD8B5E2C5CB3720031846D /* OnboardingStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B5D2C5CB3720031846D /* OnboardingStage.swift */; };
+		42CD8B5E2C5CB3720031846D /* OnboardingStageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B5D2C5CB3720031846D /* OnboardingStageView.swift */; };
 		42CD8B602C5CB3CF0031846D /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B5F2C5CB3CF0031846D /* CategoryView.swift */; };
 		42CD8B622C5CB3E90031846D /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B612C5CB3E90031846D /* ColorView.swift */; };
 		42CD8B642C5CB4050031846D /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B632C5CB4050031846D /* GenderView.swift */; };
@@ -34,7 +34,7 @@
 		42CD8B512C5CB30D0031846D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42CD8B542C5CB30D0031846D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		42CD8B5B2C5CB3480031846D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		42CD8B5D2C5CB3720031846D /* OnboardingStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStage.swift; sourceTree = "<group>"; };
+		42CD8B5D2C5CB3720031846D /* OnboardingStageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStageView.swift; sourceTree = "<group>"; };
 		42CD8B5F2C5CB3CF0031846D /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		42CD8B612C5CB3E90031846D /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		42CD8B632C5CB4050031846D /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
@@ -87,7 +87,6 @@
 				42ECC9712C5E662E00D30F1D /* Services */,
 				42ECC95B2C5E4E0700D30F1D /* Localization */,
 				42ECC97B2C5FB09800D30F1D /* Supplements */,
-				42CD8B6D2C5CB47A0031846D /* Models */,
 				42CD8B512C5CB30D0031846D /* Assets.xcassets */,
 				42CD8B4F2C5CB30B0031846D /* ContentView.swift */,
 				42CD8B532C5CB30D0031846D /* Preview Content */,
@@ -103,12 +102,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		42CD8B6D2C5CB47A0031846D /* Models */ = {
+		42CD8B6D2C5CB47A0031846D /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				42CD8B6B2C5CB47A0031846D /* SettingsModel.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		42CD8B7B2C5CD7540031846D /* SegmentPicker */ = {
@@ -130,21 +129,22 @@
 			path = SegmentPicker/Localization;
 			sourceTree = "<group>";
 		};
-		42ECC95F2C5E4F3500D30F1D /* OnboardingViews */ = {
+		42ECC95F2C5E4F3500D30F1D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				42CD8B5D2C5CB3720031846D /* OnboardingStageView.swift */,
 				42CD8B5F2C5CB3CF0031846D /* CategoryView.swift */,
 				42CD8B612C5CB3E90031846D /* ColorView.swift */,
 				42CD8B632C5CB4050031846D /* GenderView.swift */,
 			);
-			path = OnboardingViews;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		42ECC9692C5E5F0100D30F1D /* OnboardingScreen */ = {
 			isa = PBXGroup;
 			children = (
-				42CD8B5D2C5CB3720031846D /* OnboardingStage.swift */,
-				42ECC95F2C5E4F3500D30F1D /* OnboardingViews */,
+				42ECC95F2C5E4F3500D30F1D /* Views */,
+				42CD8B6D2C5CB47A0031846D /* Model */,
 			);
 			path = OnboardingScreen;
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				42ECC97C2C5FB0E100D30F1D /* Views */,
-				42ECC9722C5E66DC00D30F1D /* AffirmationModel.swift */,
+				42F23E342C5FB43F00F4FBE4 /* Model */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -189,6 +189,14 @@
 				42CD8B7B2C5CD7540031846D /* SegmentPicker */,
 			);
 			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		42F23E342C5FB43F00F4FBE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42ECC9722C5E66DC00D30F1D /* AffirmationModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +280,7 @@
 				42CD8B502C5CB30B0031846D /* ContentView.swift in Sources */,
 				42CD8B5C2C5CB3480031846D /* MainView.swift in Sources */,
 				42CD8B4E2C5CB30B0031846D /* MyAffirmationsTestApp.swift in Sources */,
-				42CD8B5E2C5CB3720031846D /* OnboardingStage.swift in Sources */,
+				42CD8B5E2C5CB3720031846D /* OnboardingStageView.swift in Sources */,
 				42CD8B642C5CB4050031846D /* GenderView.swift in Sources */,
 				42CD8B7C2C5CD7540031846D /* SegmentPicker.Attribute.swift in Sources */,
 				42CD8B662C5CB4590031846D /* AffirmationsView.swift in Sources */,
