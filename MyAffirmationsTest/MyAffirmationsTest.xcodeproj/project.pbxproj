@@ -8,42 +8,57 @@
 
 /* Begin PBXBuildFile section */
 		42CD8B4E2C5CB30B0031846D /* MyAffirmationsTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B4D2C5CB30B0031846D /* MyAffirmationsTestApp.swift */; };
-		42CD8B502C5CB30B0031846D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B4F2C5CB30B0031846D /* ContentView.swift */; };
 		42CD8B522C5CB30D0031846D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42CD8B512C5CB30D0031846D /* Assets.xcassets */; };
 		42CD8B552C5CB30D0031846D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42CD8B542C5CB30D0031846D /* Preview Assets.xcassets */; };
-		42CD8B5C2C5CB3480031846D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B5B2C5CB3480031846D /* MainView.swift */; };
-		42CD8B5E2C5CB3720031846D /* OnboardingStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B5D2C5CB3720031846D /* OnboardingStage.swift */; };
+		42CD8B5C2C5CB3480031846D /* AffirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B5B2C5CB3480031846D /* AffirmationView.swift */; };
+		42CD8B5E2C5CB3720031846D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B5D2C5CB3720031846D /* OnboardingView.swift */; };
 		42CD8B602C5CB3CF0031846D /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B5F2C5CB3CF0031846D /* CategoryView.swift */; };
 		42CD8B622C5CB3E90031846D /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B612C5CB3E90031846D /* ColorView.swift */; };
 		42CD8B642C5CB4050031846D /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B632C5CB4050031846D /* GenderView.swift */; };
-		42CD8B662C5CB4590031846D /* AffirmationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B652C5CB4590031846D /* AffirmationsView.swift */; };
-		42CD8B702C5CB47A0031846D /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B6B2C5CB47A0031846D /* SettingsModel.swift */; };
-		42CD8B712C5CB47A0031846D /* StringsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B6C2C5CB47A0031846D /* StringsExtension.swift */; };
-		42CD8B782C5CB68F0031846D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42CD8B752C5CB68F0031846D /* Localizable.strings */; };
+		42CD8B662C5CB4590031846D /* PhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B652C5CB4590031846D /* PhrasesView.swift */; };
+		42CD8B702C5CB47A0031846D /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B6B2C5CB47A0031846D /* OnboardingModel.swift */; };
+		42CD8B712C5CB47A0031846D /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B6C2C5CB47A0031846D /* Localization.swift */; };
 		42CD8B7C2C5CD7540031846D /* SegmentPicker.Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B792C5CD7540031846D /* SegmentPicker.Attribute.swift */; };
 		42CD8B7D2C5CD7540031846D /* SegmentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B7A2C5CD7540031846D /* SegmentPicker.swift */; };
 		42CD8B7F2C5CD9610031846D /* SegmentPickerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD8B7E2C5CD9610031846D /* SegmentPickerRepresentable.swift */; };
+		42ECC9732C5E66DC00D30F1D /* AffirmationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ECC9722C5E66DC00D30F1D /* AffirmationModel.swift */; };
+		42ECC9782C5E67F000D30F1D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ECC9772C5E67F000D30F1D /* NetworkService.swift */; };
+		42F23E382C5FF58200F4FBE4 /* AffirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23E372C5FF58200F4FBE4 /* AffirmationViewModel.swift */; };
+		42F23E3B2C60A40100F4FBE4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 42F23E3A2C60A40100F4FBE4 /* Localizable.xcstrings */; };
+		42F23E3F2C60BC5C00F4FBE4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23E3E2C60BC5C00F4FBE4 /* SettingsViewModel.swift */; };
+		42F23E412C60BC7E00F4FBE4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23E402C60BC7E00F4FBE4 /* SettingsView.swift */; };
+		42F23E4B2C60DBF000F4FBE4 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23E4A2C60DBF000F4FBE4 /* OnboardingViewModel.swift */; };
+		42F23E4E2C60DECC00F4FBE4 /* AddAffirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23E4D2C60DECC00F4FBE4 /* AddAffirmationView.swift */; };
+		42F23E512C60E8C100F4FBE4 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23E502C60E8C100F4FBE4 /* LabelView.swift */; };
+		42F23E532C60ECF800F4FBE4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23E522C60ECF800F4FBE4 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42CD8B4A2C5CB30B0031846D /* MyAffirmationsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAffirmationsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42CD8B4D2C5CB30B0031846D /* MyAffirmationsTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAffirmationsTestApp.swift; sourceTree = "<group>"; };
-		42CD8B4F2C5CB30B0031846D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		42CD8B512C5CB30D0031846D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42CD8B542C5CB30D0031846D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		42CD8B5B2C5CB3480031846D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		42CD8B5D2C5CB3720031846D /* OnboardingStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStage.swift; sourceTree = "<group>"; };
+		42CD8B5B2C5CB3480031846D /* AffirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationView.swift; sourceTree = "<group>"; };
+		42CD8B5D2C5CB3720031846D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		42CD8B5F2C5CB3CF0031846D /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		42CD8B612C5CB3E90031846D /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		42CD8B632C5CB4050031846D /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
-		42CD8B652C5CB4590031846D /* AffirmationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsView.swift; sourceTree = "<group>"; };
-		42CD8B6B2C5CB47A0031846D /* SettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
-		42CD8B6C2C5CB47A0031846D /* StringsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringsExtension.swift; sourceTree = "<group>"; };
-		42CD8B762C5CB68F0031846D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "../../../Downloads/AffirmationsSpark-main/AffirmationsSpark/Models/en.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		42CD8B772C5CB68F0031846D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = "../../../Downloads/AffirmationsSpark-main/AffirmationsSpark/Models/ru.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		42CD8B652C5CB4590031846D /* PhrasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesView.swift; sourceTree = "<group>"; };
+		42CD8B6B2C5CB47A0031846D /* OnboardingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		42CD8B6C2C5CB47A0031846D /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		42CD8B792C5CD7540031846D /* SegmentPicker.Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentPicker.Attribute.swift; sourceTree = "<group>"; };
 		42CD8B7A2C5CD7540031846D /* SegmentPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentPicker.swift; sourceTree = "<group>"; };
 		42CD8B7E2C5CD9610031846D /* SegmentPickerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentPickerRepresentable.swift; sourceTree = "<group>"; };
+		42ECC9722C5E66DC00D30F1D /* AffirmationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationModel.swift; sourceTree = "<group>"; };
+		42ECC9772C5E67F000D30F1D /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		42F23E372C5FF58200F4FBE4 /* AffirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationViewModel.swift; sourceTree = "<group>"; };
+		42F23E3A2C60A40100F4FBE4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = Localizable.xcstrings; path = MyAffirmationsTest/Services/Localization/Localizable.xcstrings; sourceTree = SOURCE_ROOT; };
+		42F23E3E2C60BC5C00F4FBE4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		42F23E402C60BC7E00F4FBE4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		42F23E4A2C60DBF000F4FBE4 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		42F23E4D2C60DECC00F4FBE4 /* AddAffirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAffirmationView.swift; sourceTree = "<group>"; };
+		42F23E502C60E8C100F4FBE4 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		42F23E522C60ECF800F4FBE4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,16 +92,13 @@
 			isa = PBXGroup;
 			children = (
 				42CD8B4D2C5CB30B0031846D /* MyAffirmationsTestApp.swift */,
-				42CD8B5B2C5CB3480031846D /* MainView.swift */,
-				42CD8B5D2C5CB3720031846D /* OnboardingStage.swift */,
-				42CD8B722C5CB6470031846D /* Localization */,
-				42CD8B5F2C5CB3CF0031846D /* CategoryView.swift */,
-				42CD8B612C5CB3E90031846D /* ColorView.swift */,
-				42CD8B632C5CB4050031846D /* GenderView.swift */,
-				42CD8B652C5CB4590031846D /* AffirmationsView.swift */,
-				42CD8B4F2C5CB30B0031846D /* ContentView.swift */,
-				42CD8B7B2C5CD7540031846D /* SegmentPicker */,
-				42CD8B6D2C5CB47A0031846D /* Models */,
+				42ECC9692C5E5F0100D30F1D /* OnboardingScreen */,
+				42ECC96A2C5E628D00D30F1D /* AffirmationScreen */,
+				42F23E3D2C60BC3200F4FBE4 /* SettingsScreen */,
+				42F23E4F2C60DED700F4FBE4 /* AddAffirmationScreen */,
+				42ECC97D2C5FB13100D30F1D /* CustomComponents */,
+				42ECC9712C5E662E00D30F1D /* Services */,
+				42F23E3C2C60A5D600F4FBE4 /* Localization */,
 				42CD8B512C5CB30D0031846D /* Assets.xcassets */,
 				42CD8B532C5CB30D0031846D /* Preview Content */,
 			);
@@ -101,23 +113,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		42CD8B6D2C5CB47A0031846D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				42CD8B6B2C5CB47A0031846D /* SettingsModel.swift */,
-				42CD8B6C2C5CB47A0031846D /* StringsExtension.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		42CD8B722C5CB6470031846D /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-				42CD8B752C5CB68F0031846D /* Localizable.strings */,
-			);
-			path = Localization;
-			sourceTree = "<group>";
-		};
 		42CD8B7B2C5CD7540031846D /* SegmentPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +121,91 @@
 				42CD8B7E2C5CD9610031846D /* SegmentPickerRepresentable.swift */,
 			);
 			path = SegmentPicker;
+			sourceTree = "<group>";
+		};
+		42ECC95F2C5E4F3500D30F1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42CD8B5F2C5CB3CF0031846D /* CategoryView.swift */,
+				42CD8B612C5CB3E90031846D /* ColorView.swift */,
+				42CD8B632C5CB4050031846D /* GenderView.swift */,
+				42F23E502C60E8C100F4FBE4 /* LabelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42ECC9692C5E5F0100D30F1D /* OnboardingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				42CD8B6B2C5CB47A0031846D /* OnboardingModel.swift */,
+				42CD8B5D2C5CB3720031846D /* OnboardingView.swift */,
+				42F23E4A2C60DBF000F4FBE4 /* OnboardingViewModel.swift */,
+				42ECC95F2C5E4F3500D30F1D /* Views */,
+			);
+			path = OnboardingScreen;
+			sourceTree = "<group>";
+		};
+		42ECC96A2C5E628D00D30F1D /* AffirmationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				42CD8B5B2C5CB3480031846D /* AffirmationView.swift */,
+				42ECC9722C5E66DC00D30F1D /* AffirmationModel.swift */,
+				42F23E372C5FF58200F4FBE4 /* AffirmationViewModel.swift */,
+				42ECC97C2C5FB0E100D30F1D /* Views */,
+			);
+			path = AffirmationScreen;
+			sourceTree = "<group>";
+		};
+		42ECC9712C5E662E00D30F1D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				42ECC9772C5E67F000D30F1D /* NetworkService.swift */,
+				42F23E522C60ECF800F4FBE4 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		42ECC97C2C5FB0E100D30F1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42CD8B652C5CB4590031846D /* PhrasesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42ECC97D2C5FB13100D30F1D /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				42CD8B7B2C5CD7540031846D /* SegmentPicker */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		42F23E3C2C60A5D600F4FBE4 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				42F23E3A2C60A40100F4FBE4 /* Localizable.xcstrings */,
+				42CD8B6C2C5CB47A0031846D /* Localization.swift */,
+			);
+			name = Localization;
+			path = Services/Localization;
+			sourceTree = "<group>";
+		};
+		42F23E3D2C60BC3200F4FBE4 /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				42F23E3E2C60BC5C00F4FBE4 /* SettingsViewModel.swift */,
+				42F23E402C60BC7E00F4FBE4 /* SettingsView.swift */,
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		42F23E4F2C60DED700F4FBE4 /* AddAffirmationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				42F23E4D2C60DECC00F4FBE4 /* AddAffirmationView.swift */,
+			);
+			path = AddAffirmationScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,8 +267,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F23E3B2C60A40100F4FBE4 /* Localizable.xcstrings in Resources */,
 				42CD8B552C5CB30D0031846D /* Preview Assets.xcassets in Resources */,
-				42CD8B782C5CB68F0031846D /* Localizable.strings in Resources */,
 				42CD8B522C5CB30D0031846D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,34 +281,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				42CD8B7F2C5CD9610031846D /* SegmentPickerRepresentable.swift in Sources */,
-				42CD8B702C5CB47A0031846D /* SettingsModel.swift in Sources */,
+				42CD8B702C5CB47A0031846D /* OnboardingModel.swift in Sources */,
 				42CD8B622C5CB3E90031846D /* ColorView.swift in Sources */,
-				42CD8B712C5CB47A0031846D /* StringsExtension.swift in Sources */,
-				42CD8B502C5CB30B0031846D /* ContentView.swift in Sources */,
-				42CD8B5C2C5CB3480031846D /* MainView.swift in Sources */,
+				42F23E532C60ECF800F4FBE4 /* NetworkManager.swift in Sources */,
+				42CD8B712C5CB47A0031846D /* Localization.swift in Sources */,
+				42ECC9782C5E67F000D30F1D /* NetworkService.swift in Sources */,
+				42F23E412C60BC7E00F4FBE4 /* SettingsView.swift in Sources */,
+				42CD8B5C2C5CB3480031846D /* AffirmationView.swift in Sources */,
 				42CD8B4E2C5CB30B0031846D /* MyAffirmationsTestApp.swift in Sources */,
-				42CD8B5E2C5CB3720031846D /* OnboardingStage.swift in Sources */,
+				42CD8B5E2C5CB3720031846D /* OnboardingView.swift in Sources */,
+				42F23E512C60E8C100F4FBE4 /* LabelView.swift in Sources */,
 				42CD8B642C5CB4050031846D /* GenderView.swift in Sources */,
 				42CD8B7C2C5CD7540031846D /* SegmentPicker.Attribute.swift in Sources */,
-				42CD8B662C5CB4590031846D /* AffirmationsView.swift in Sources */,
+				42CD8B662C5CB4590031846D /* PhrasesView.swift in Sources */,
+				42F23E4E2C60DECC00F4FBE4 /* AddAffirmationView.swift in Sources */,
+				42ECC9732C5E66DC00D30F1D /* AffirmationModel.swift in Sources */,
+				42F23E4B2C60DBF000F4FBE4 /* OnboardingViewModel.swift in Sources */,
 				42CD8B602C5CB3CF0031846D /* CategoryView.swift in Sources */,
 				42CD8B7D2C5CD7540031846D /* SegmentPicker.swift in Sources */,
+				42F23E382C5FF58200F4FBE4 /* AffirmationViewModel.swift in Sources */,
+				42F23E3F2C60BC5C00F4FBE4 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		42CD8B752C5CB68F0031846D /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				42CD8B762C5CB68F0031846D /* en */,
-				42CD8B772C5CB68F0031846D /* ru */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		42CD8B562C5CB30D0031846D /* Debug */ = {
@@ -283,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -340,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -364,8 +440,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,9 +449,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Home.MyAffirmationsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -393,8 +473,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,9 +482,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Home.MyAffirmationsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
