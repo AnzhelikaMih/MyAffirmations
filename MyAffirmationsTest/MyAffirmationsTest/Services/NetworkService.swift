@@ -7,19 +7,22 @@
 
 import Foundation
 
+// MARK: - NetworkServiceProtocol
 protocol NetworkServiceProtocol {
-    func loadData(completion: @escaping (AffirmationsModel?) -> Void)
+    func loadData(completion: @escaping (AffirmationModel?) -> Void)
 }
 
+// MARK: - NetworkService
 final class NetworkService: NetworkServiceProtocol {
     
-    func loadData(completion: @escaping (AffirmationsModel?) -> Void) {
+    // MARK: - Methods
+    func loadData(completion: @escaping (AffirmationModel?) -> Void) {
         
-        guard let url = URL(string: "https://raw.githubusercontent.com/AnzhelikaMih/API-flights/main/AffirmationsAPI.json")
+        guard let url = URL(string: NetworkConstants.baseURL)
         else { return }
         
         var request = URLRequest(url: url)
-        request.httpMethod = "GET"
+        request.httpMethod = NetworkConstants.httpMethod
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
@@ -35,7 +38,7 @@ final class NetworkService: NetworkServiceProtocol {
             }
             
             do {
-                let phrasesListData = try JSONDecoder().decode(AffirmationsModel.self, from: data)
+                let phrasesListData = try JSONDecoder().decode(AffirmationModel.self, from: data)
                 DispatchQueue.main.async {
                     completion(phrasesListData)
                 }
