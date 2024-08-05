@@ -9,10 +9,19 @@ import Foundation
 
 // MARK: - AffirmationModel
 struct AffirmationModel: Decodable {
-    var love: [String]
-    var friendship: [String]
-    var love_male: [String]
-    var love_female: [String]
-    var friendship_male: [String]
-    var friendship_female: [String]
+    let love: [String]
+    let friendship: [String]
+    let loveMale: [String]
+    let loveFemale: [String]
+    let friendshipMale: [String]
+    let friendshipFemale: [String]
+    
+    enum CodingKeys: String, CodingKey {
+        case love
+        case friendship
+        case loveMale = "love_male"
+        case loveFemale = "love_female"
+        case friendshipMale = "friendship_male"
+        case friendshipFemale = "friendship_female"
+    }
 }
