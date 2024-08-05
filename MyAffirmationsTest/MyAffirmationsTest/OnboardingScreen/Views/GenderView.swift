@@ -16,14 +16,10 @@ struct GenderView: View {
     var body: some View {
         VStack {
             Spacer()
-            Text(Localization.selectGender.localized.uppercased())
-                .font(.title)
-                .foregroundColor(.secondary)
-                .padding()
-                .multilineTextAlignment(.center)
+            LabelView(title: Localization.selectGender.localized)
             SegmentPickerRepresentable(
                 selectedSegmentIndex: Binding(
-                    get: { Gender.allCases.firstIndex(of: selectedGender) ?? 0 },
+                    get: { Gender.allCases.firstIndex(of: selectedGender) ?? .zero },
                     set: { selectedGender = Gender.allCases[$0] }
                 ),
                 attribute: .init(

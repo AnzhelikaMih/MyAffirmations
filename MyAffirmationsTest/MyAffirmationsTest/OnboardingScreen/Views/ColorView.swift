@@ -16,11 +16,7 @@ struct ColorView: View {
     var body: some View {
         VStack {
             Spacer()
-            Text(Localization.selectColor.localized.uppercased())
-                .font(.title)
-                .foregroundColor(.secondary)
-                .padding()
-                .multilineTextAlignment(.center)
+            LabelView(title: Localization.selectColor.localized)
             SegmentPickerRepresentable(
                 selectedSegmentIndex: Binding(
                     get: { BGColor.allCases.firstIndex(of: selectedBGColor) ?? .zero },

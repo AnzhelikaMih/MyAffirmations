@@ -16,14 +16,10 @@ struct CategoryView: View {
     var body: some View {
         VStack {
             Spacer()
-            Text(Localization.selectCategory.localized.uppercased())
-                .font(.title)
-                .foregroundColor(.secondary)
-                .padding()
-                .multilineTextAlignment(.center)
+            LabelView(title: Localization.selectCategory.localized)
             SegmentPickerRepresentable(
                 selectedSegmentIndex: Binding(
-                    get: { Category.allCases.firstIndex(of: selectedCategory) ?? 0 },
+                    get: { Category.allCases.firstIndex(of: selectedCategory) ?? .zero },
                     set: { selectedCategory = Category.allCases[$0] }
                 ),
                 attribute: .init(
