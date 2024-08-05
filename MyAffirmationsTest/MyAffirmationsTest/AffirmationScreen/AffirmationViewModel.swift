@@ -46,13 +46,13 @@ final class AffirmationViewModel: ObservableObject {
         let currentLanguage = Locale.current.language.languageCode?.identifier
         switch (currentLanguage, selectedCategory, selectedGender) {
         case ("ru", .love, .male):
-            return affirmations.love_male
+            return affirmations.loveMale
         case ("ru", .love, .female):
-            return affirmations.love_female
+            return affirmations.loveFemale
         case ("ru", .friendship, .male):
-            return affirmations.friendship_male
+            return affirmations.friendshipMale
         case ("ru", .friendship, .female):
-            return affirmations.friendship_female
+            return affirmations.friendshipFemale
         case (_, .love, _):
             return affirmations.love
         case (_, .friendship, _):
