@@ -27,7 +27,7 @@ extension SegmentPicker {
                 font: UIFont.systemFont(ofSize: 20)
             ),
             selectedSegmentStyle: SegmentStyle = .init(
-                foregroundColor: .secondaryLabel,
+                foregroundColor: .gray,
                 font: UIFont.systemFont(ofSize: 20)
             ),
             valueChanged: ((Int) -> Void)? = nil
