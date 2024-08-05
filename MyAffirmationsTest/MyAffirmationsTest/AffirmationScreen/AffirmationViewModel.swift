@@ -16,6 +16,10 @@ enum ViewState {
 
 final class AffirmationViewModel: ObservableObject {
     
+    private enum Constants {
+        static let ruLanguage: String = "ru"
+    }
+    
     // MARK: - Properties
     @Published var state: ViewState = .loading
 
@@ -45,13 +49,13 @@ final class AffirmationViewModel: ObservableObject {
     private func getLocalizedAffirmations(_ affirmations: AffirmationModel) -> [String] {
         let currentLanguage = Locale.current.language.languageCode?.identifier
         switch (currentLanguage, selectedCategory, selectedGender) {
-        case ("ru", .love, .male):
+        case (Constants.ruLanguage, .love, .male):
             return affirmations.loveMale
-        case ("ru", .love, .female):
+        case (Constants.ruLanguage, .love, .female):
             return affirmations.loveFemale
-        case ("ru", .friendship, .male):
+        case (Constants.ruLanguage, .friendship, .male):
             return affirmations.friendshipMale
-        case ("ru", .friendship, .female):
+        case (Constants.ruLanguage, .friendship, .female):
             return affirmations.friendshipFemale
         case (_, .love, _):
             return affirmations.love
