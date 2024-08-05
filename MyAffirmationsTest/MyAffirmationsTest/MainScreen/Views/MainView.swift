@@ -9,14 +9,20 @@ import SwiftUI
 
 struct MainView: View {
     
+    // MARK: - Constants
+    enum Constants {
+        static let icon = "text.justify"
+    }
+    
     // MARK: - Properties
     @AppStorage("onboardingChecked") private var onboardingChecked: Bool = false
     @AppStorage("category") private var selectedCategory: Category = .love
     @AppStorage("color") private var selectedBGColor: BGColor = .blue
+    @AppStorage("gender") private var selectedGender: Gender = .male
     
     @StateObject private var viewModel = AffirmationsViewModel()
     
-    // MARK: - Components
+    // MARK: - Content
     var body: some View {
         if onboardingChecked {
             VStack {
@@ -25,8 +31,8 @@ struct MainView: View {
                     Button(action: {
                         print("1")
                     }, label: {
-                        Image(systemName: "text.justify")
-                            .foregroundColor(.secondary)
+                        Image(systemName: Constants.icon)
+                            .foregroundColor(.white)
                             .font(.title)
                             .frame(maxWidth: 40, maxHeight: 40)
                             .padding()
@@ -35,12 +41,19 @@ struct MainView: View {
                 .frame(maxWidth: UIScreen.main.bounds.width)
                 
                 if viewModel.isLoading {
-                    ProgressView("Loading...")
+                    Spacer()
+                    ProgressView(Localization.loading.localized)
+                        .font(.title)
+                        .foregroundColor(.white)
+                    Spacer()
                 } else if let affirmations = viewModel.affirmations {
                     AffirmationsView(affirmations: selectedCategory == .love ? affirmations.love : affirmations.friendship)
                 } else if let error = viewModel.error {
+                    Spacer()
                     Text(error)
                         .foregroundColor(.red)
+                        .font(.title)
+                    Spacer()
                 }
                 
                 Spacer()

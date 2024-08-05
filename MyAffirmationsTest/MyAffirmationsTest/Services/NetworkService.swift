@@ -16,10 +16,7 @@ final class NetworkService: NetworkServiceProtocol {
     func loadData(completion: @escaping (AffirmationsModel?) -> Void) {
         
         guard let url = URL(string: "https://raw.githubusercontent.com/AnzhelikaMih/API-flights/main/AffirmationsAPI.json")
-        else {
-            print("Invalid URL")
-            return
-        }
+        else { return }
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"

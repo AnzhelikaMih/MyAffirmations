@@ -12,14 +12,14 @@ struct AffirmationsView: View {
     // MARK: - Properties
     let affirmations: [String]
     
-    // MARK: - Components
+    // MARK: - Context
     var body: some View {
         VStack {
             TabView {
                 ForEach(affirmations, id: \.self) { phrase in
                     Text(phrase)
                         .font(.largeTitle)
-                        .foregroundColor(.secondary)
+                        .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .edgesIgnoringSafeArea(.all)
