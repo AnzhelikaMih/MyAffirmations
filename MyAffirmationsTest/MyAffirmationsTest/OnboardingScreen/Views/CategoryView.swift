@@ -12,11 +12,11 @@ struct CategoryView: View {
     // MARK: - Properties
     @Binding var selectedCategory: Category
 
-    // MARK: - Components
+    // MARK: - Context
     var body: some View {
         VStack {
             Spacer()
-            Text("select_category".localized.uppercased())
+            Text(Localization.selectCategory.localized.uppercased())
                 .font(.title)
                 .foregroundColor(.secondary)
                 .padding()

@@ -12,18 +12,18 @@ struct ColorView: View {
     // MARK: - Properties
     @Binding var selectedBGColor: BGColor
     
-    // MARK: - Components
+    // MARK: - Context
     var body: some View {
         VStack {
             Spacer()
-            Text("select_color".localized.uppercased())
+            Text(Localization.selectColor.localized.uppercased())
                 .font(.title)
                 .foregroundColor(.secondary)
                 .padding()
                 .multilineTextAlignment(.center)
             SegmentPickerRepresentable(
                 selectedSegmentIndex: Binding(
-                    get: { BGColor.allCases.firstIndex(of: selectedBGColor) ?? 0 },
+                    get: { BGColor.allCases.firstIndex(of: selectedBGColor) ?? .zero },
                     set: { selectedBGColor = BGColor.allCases[$0] }
                 ),
                 attribute: .init(

@@ -13,8 +13,8 @@ enum Category: String, CaseIterable, Identifiable {
     var id: String { self.rawValue }
     var displayName: String {
         switch self {
-        case .love: return "love".localized
-        case .friendship: return "friendship".localized
+        case .love: return Localization.love.localized
+        case .friendship: return Localization.friendship.localized
         }
     }
 }
@@ -32,8 +32,8 @@ enum BGColor: String, CaseIterable, Identifiable {
     
     var displayName: String {
         switch self {
-        case .blue: return "blue".localized
-        case .red: return "red".localized
+        case .blue: return Localization.blue.localized
+        case .red: return Localization.red.localized
         }
     }
 }
@@ -44,8 +44,8 @@ enum Gender: String, CaseIterable, Identifiable {
     var id: String { self.rawValue }
     var displayName: String {
         switch self {
-        case .male: return "male".localized
-        case .female: return "female".localized
+        case .male: return Localization.male.localized
+        case .female: return Localization.female.localized
         }
     }
 }

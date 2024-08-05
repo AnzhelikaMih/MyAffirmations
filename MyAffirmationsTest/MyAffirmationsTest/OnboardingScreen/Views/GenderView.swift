@@ -12,11 +12,11 @@ struct GenderView: View {
     // MARK: - Properties
     @Binding var selectedGender: Gender
     
-    // MARK: - Components
+    // MARK: - Context
     var body: some View {
         VStack {
             Spacer()
-            Text("select_gender".localized.uppercased())
+            Text(Localization.selectGender.localized.uppercased())
                 .font(.title)
                 .foregroundColor(.secondary)
                 .padding()

@@ -30,8 +30,7 @@ final class AffirmationsViewModel: ObservableObject {
             if let model = model {
                 self?.affirmations = model
             } else {
-                self?.error = "Failed to load data."
-                print("Failed to load data.")
+                self?.error = Localization.error.localized
             }
         }
     }

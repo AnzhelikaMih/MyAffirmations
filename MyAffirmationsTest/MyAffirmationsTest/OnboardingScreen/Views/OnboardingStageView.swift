@@ -9,6 +9,11 @@ import SwiftUI
 
 struct OnboardingStageView: View {
     
+    // MARK: - Constants
+    enum Constants {
+        static let icon = "bg_onboarding"
+    }
+    
     // MARK: - Properties
     @State private var currentStep: Int = 0
     
@@ -17,10 +22,10 @@ struct OnboardingStageView: View {
     @AppStorage("color") private var selectedBGColor: BGColor = .blue
     @AppStorage("gender") private var selectedGender: Gender = .male
     
-    // MARK: - Components
+    // MARK: - Context
     var body: some View {
         ZStack {
-            Image("bg_onboarding")
+            Image(Constants.icon)
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
@@ -48,7 +53,7 @@ struct OnboardingStageView: View {
                     }
                     
                 }) {
-                    Text(currentStep < 2 ? "next_button".localized.uppercased() : "start_button".localized.uppercased())
+                    Text(currentStep < 2 ? Localization.nextButton.localized.uppercased() : Localization.startButton.localized.uppercased())
                         .padding()
                         .frame(maxWidth: .infinity)
                         .frame(height: 48)
